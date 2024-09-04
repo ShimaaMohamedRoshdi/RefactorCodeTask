@@ -1,0 +1,131 @@
+:root {
+    --primary-color: #007bff; /* Blue */
+    --primary-dark: #0056b3; /* Darker Blue */
+    --secondary-color: #f8f9fa; /* Light Gray */
+    --background-color: #f4f4f9; /* Light Gray Background */
+    --text-color: #333; /* Dark Text */
+    --border-color: #ddd; /* Light Border */
+    --footer-background-color: #343a40; /* Dark Gray */
+    --footer-text-color: #f8f9fa; /* Light Text */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+}
+
+.navbar {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.navbar-brand, .nav-link {
+    color: var(--secondary-color);
+}
+
+.navbar-brand:hover, .nav-link:hover {
+    color: var(--primary-dark);
+}
+
+.card {
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+}
+/* Style for images in cards */
+.card-img-top {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Ensure cards are smaller on small screens */
+  @media (max-width: 576px) {
+    .card {
+      max-width: 50%!important;
+    }
+  }
+  
+
+footer {
+    background-color: var(--footer-background-color);
+    color: var(--footer-text-color);
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer .form-control {
+    border-radius: 8px;
+}
+
+#backToTop {
+    
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 1000;
+}
+
+@media (max-width: 576px) {
+    .navbar-collapse {
+        text-align: center;
+    }
+}
+
+footer {
+    background-color: var(--footer-background-color);
+    color: var(--footer-text-color);
+}
+
+footer h5 {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+}
+
+footer .form-control, footer .btn {
+    border-radius: 8px;
+}
+
+footer ul {
+    padding-left: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    color: var(--footer-text-color);
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
